@@ -1,0 +1,155 @@
+/* Login page style */
+.centered {
+    text-align: center;
+}
+.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form {
+    padding: 9%;
+    background: #1B85B2;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form h3 {
+    text-align: center;
+    margin-bottom: 12%;
+    color: #fff;
+}
+.btnSubmit {
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #D3D3D3;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+}
+.btnSubmit:hover {
+    color: #282726;
+    background-color: #fff;
+}
+.btnForgotPwd {
+    color: #0D3E53;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgotPwd:hover {
+    text-decoration:none;
+    color: #fff;
+}
+
+/* Events page style */
+.event-block-container {
+    padding: 10px;
+}
+
+.event-block {
+    border: 1px solid #1B85B2;
+    border-radius: .25rem;
+}
+
+.event-title {
+    /* color: white; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.event-details {
+    background-color: #EFEFEF;
+    border-radius: .25rem;
+    padding: 10px;
+    padding-left: 20px;
+    word-wrap: break-word;
+}
+
+.content-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+
+/* Other Classes for Page Styling */
+
+img {
+  width: 100%;
+}
+
+.active {
+    border-bottom: 3px solid #FFC42C;
+    float: left;
+}
+
+.nav-item {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+}
+
+#first {
+    background-color: blue;
+}
+#second {
+    background-color: green;
+}
+.col-6 {
+    border: 2px solid black;
+}
+#header {
+    background-color: #C44653;
+    padding-left: 1.5em;
+    color: black;
+}
+.nav-link {
+    color: #C44653 !important;
+}
+.nav-link:hover {
+    background-color: #d6d2d3; /*#FFC42C;*/
+}
+footer {
+    background-color: #C44653 !important;
+}
+footer div {
+    color: white;
+}
+footer a {
+    color: white;
+}
+.mission {
+    margin-top: 2em !important;
+}
+
+.home-btns {
+    color: white;
+    background-color: #1B85B2 !important;
+}
+
+.card {
+    border-color: #1B85B2;
+}
+
+/* .header {
+    float: left;
+} */
+
+.hero-style {
+    background-size: cover !important; 
+    background-position: center !important;
+    height:500px; 
+}

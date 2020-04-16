@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Search | Programmer Quotes</title>
+</head>
+
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Programmer Quotes</a>
+    </nav>
+
+    <div id="page-content">
+        <div id="app">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h1 class="font-weight-light mt-4 text-white">Progamming Quotes</h1>
+                        <p class="lead text-white-50">Search for quotes from a certain author. <br> (Pro Tip: Try Linus Torvalds, Edsger W. Dijkstra, etc.)</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <form v-on:submit.prevent="filter" class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <input type="text" v-model="queryTerms" id="query" class="form-control" placeholder="Search authors">
+                            <button id="submit" type="submit" class="btn btn-warning">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div v-for="quote in filteredList" class="definitionGroup">
+                            <!--<h1 id="word">Quotes</h1>-->
+                            <!--<br>-->
+                            <div id="definition">
+                                {{ quote.en }}
+                                <!--<ul>-->
+                                    <!--<li >{{quote.en}}{{quote.author}}</li>-->
+                                <!--</ul>-->
+                                <br><br>
+                                <em>&nbsp;&nbsp;~&nbsp;{{ quote.author }}</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+                <small>Copyright &copy; 2019 Programmer Quotes | <a href="https://github.com/sequoiap/creative3"
+                        target="_blank">github.com/sequoiap/creative3</a></small>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

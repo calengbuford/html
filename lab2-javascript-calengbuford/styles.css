@@ -1,0 +1,78 @@
+body {
+  height: 100%;
+}
+
+#page-content {
+  padding: 20px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    color: orange;
+}
+
+#title {
+    background-color: #E7E7E7;
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: solid 4px #6A6A6A;
+}
+
+#weatherInput {
+    background-color: #FFF4CC;
+}
+
+.grey {
+    background-color: #ECECEC;
+}
+
+.padding-div {
+    padding-left: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: row;
+}
+
+.outline {
+    border: solid 1px red;
+}
+
+.form-div {
+    background-color: #D8D8D8;
+    padding: 15px;
+}
+
+.center-vertically {
+  vertical-align: middle;
+}
+
+.weather-today {
+    border: solid 2px #A2A2A2;
+}
+
+.weather-three-hr {
+    border: solid 2px #A2A2A2;
+}
+.weather-five-day {
+    border: solid 2px #A2A2A2;
+}
